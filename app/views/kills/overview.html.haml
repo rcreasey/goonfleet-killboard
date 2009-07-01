@@ -1,0 +1,5 @@
+%h2 Recent Kills
+= kill_list_table('Recent Kills', %w(Time System Victim Alliance Corp Ship &nbsp; ), @gf_kills, {:pagable => false})
+
+%h2 Recent Losses
+= kill_list_table('Recent Losses', %w(Time System Victim Alliance Corp Ship &nbsp; ), @gf_losses, {:pagable => false})

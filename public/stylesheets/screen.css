@@ -1,0 +1,644 @@
+body {
+    width: 760px;
+    background: #FFF;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #000;
+    text-align: center;
+}
+
+form {
+    margin: 0;
+}
+
+div#victimImage {
+    width: 128px;
+    height: 128px;
+    float: left;
+    margin: 0 1em 1em 1em;
+    border-width: 1px;
+    border-style: solid;
+}
+
+div#main {
+    background: #fafafa !important;
+    position: relative;
+    margin: auto;
+    width: 760px;
+    border: 1px solid #000;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+div#header {
+    position: relative;
+    background-image: url(/images/header5.jpg);
+    background-repeat: no-repeat;
+    height: 160px;
+    border-bottom: 1px solid #000;
+}
+
+.nobottomBorder {
+    border-bottom: 0px solid #000;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+#topkill,
+#infolabels {
+    line-height: 1.4em;
+    font-size: 0.9em;
+}
+
+a img,
+a:hover img {
+    border-width: 0px;
+    text-decoration: none;
+}
+
+#header h1 {
+    position: absolute;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0 10px;
+    top: 50px;
+    left: 150px;
+}
+
+#menu2 {
+    position: absolute;
+    font: 0.6em sans-serif;
+    right: 0px;
+    top: 8px;
+    list-style: none;
+    margin: 0;
+}
+
+#menu2 li {
+    display: inline;
+    position: relative;
+    padding-left: 1em;
+    padding-right: 0.5em;
+    background-color: transparent;
+    margin: 0 1px;
+}
+
+#menu2 li a {
+    color: #435D71;
+    padding: 2px 5px;
+    background: #FFF;
+    border: 1px solid #CCCCCC;
+    text-decoration: none;
+}
+
+#menu2 li a:hover {
+    color: #FFF;
+    background: #264058;
+}
+
+div#topkill a,
+.mainBody a:link, a:visited, a:active,
+.rightBody a:link, a:visited, a:active {
+    color: #435D71;
+    background: none;
+    text-decoration: none;
+}
+
+div#topkill a:link:hover, a:visited:hover,
+.mainBody a:link:hover, a:visited:hover,
+.rightBody a:link:hover, a:visited:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #264058;
+}
+
+a.raw:hover {
+    background: none !important;
+}
+
+.title {
+    font: 1.2em sans-serif;
+    color: #000;
+    margin: 10px 0px 0px 20px;
+    text-align: left;
+}
+
+h3.title {
+    font: 1em sans-serif;
+    margin: 2px 0 0 0;
+}
+
+.title .showall {
+    font-size: 0.5em;
+    color: #6D6D6D;
+}
+
+#player .showall {
+    font-size: 0.8em;
+    display: block;
+}
+
+#addKM {
+    width: 70%;
+    margin: 1em auto;
+}
+
+#addKM textarea {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #aeaeae;
+    display: block;
+}
+
+input:focus, select:focus, textarea:focus {
+    background: #E4FEF5;
+}
+
+#overview {
+    float: left;
+    width: 200px;
+    padding-left: 10px;
+    display: block;
+    text-align: left;
+}
+
+#overview h2.title {
+}
+
+#overview ul {
+    margin: 0 1em;
+    padding: 0 1em;
+    list-style: none;
+    font-size: 0.7em;
+}
+
+#overview ul li {
+    border-bottom: 1px solid #aeaeae;
+    width: 150px;
+    margin: 3px 0;
+    padding: 2px;
+}
+
+#player a {
+    color: #50718c;
+    background: none;
+    text-decoration: none;
+}
+
+#player a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #264058;
+}
+
+#overview ul li .info {
+    font-weight: bold;
+}
+
+#overview ul li input {
+    font-weight: bold;
+    font-size: 0.9em;
+    margin: 1px;
+}
+
+#player, #player .title {
+    text-align: center;
+}
+
+#overview h2 {
+    margin: 10px 0 0 0;
+}
+
+#player img {
+    border: 1px solid #000000;
+}
+
+#alliance img {
+    border: 0px;
+}
+
+#recent input {
+    font-size: 0.9em;
+    border: 1px solid #000000;
+    width: 75%;
+}
+
+.mainBody {
+    width: 100%;
+}
+
+#rawKM {
+    width: 70%;
+    text-align: left;
+    margin: 1em auto;
+}
+
+.rightBody {
+  clear: both;
+}
+
+#system .rightBody {
+    width: 100%;
+}
+
+#system .listTime {
+    border-left: none;
+}
+
+#killmail .rightBody {
+    width: 650px;
+}
+
+#killmailinfo {
+    font-size: .9em;
+    margin: 1em 1em 1em 175px;
+    text-align: left;
+}
+
+#killmail #infolabels {
+    float: left;
+    margin-left: 1em;
+    height: 220px;
+}
+
+#killmailinfo span {
+  display: block;
+  float: left;
+  width: 128px;
+}
+
+#shipsflown li {
+    height: 34px;
+    clear: both;
+}
+
+#shipsflown li a {
+    float: left;
+    margin-right: 5px;
+}
+
+/*-----------------------------------------------------------------------------------------------
+  Table Styling Goes Here
+-----------------------------------------------------------------------------------------------*/
+td {
+    margin: 0;
+    padding: 3px;
+    border-left: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.recent table, .participants table, .destroyed table  {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+th {
+    font-size: 0.9em;
+    padding: 5px 0;
+    background-color: #cbdfef;
+    border: 1px solid #859fb4;
+    border-left: none;
+    border-right: none;
+}
+
+th.listTime, th.listPartName, th.listItemDestroyed {
+    border-left: 1px solid #859fb4;
+}
+
+div.destroyed th.listItemLocDestroyed {
+  width: 150px
+}
+div.destroyed th.listItemQtyDestroyed {
+  width: 125px
+}
+
+.recent td, .participants td, .destroyed td {
+    font-size: 0.8em;
+}
+
+.listTime {
+    width: 150px;
+}
+
+.listSystem {
+    width: 70px;
+    white-space:nowrap;
+}
+
+.listDetails {
+    width: 55px;
+}
+
+td.listDetails {
+    text-transform: lowercase;
+}
+
+td.listType {
+	text-transform: capitalize;
+}
+
+.row1 {
+
+}
+.row1:hover {
+	background-color: #EEE;
+}
+
+.row2 {
+	
+}
+.row2:hover {
+	background-color: #EEE;
+}
+
+/*-----------------------------------------------------------------------------------------------
+  This Is The Navigation
+-----------------------------------------------------------------------------------------------*/
+div#menu {
+    width: 760px;
+    border-bottom: 1px solid #000;
+    background: url(/images/navbg.gif);
+}
+
+div#menufooter {
+    width: 760px;
+    background: url(/images/navbg.gif);
+}
+
+div#menufooter ul {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+div#menu ul {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div#menufooter ul li {
+    font-size: 11px;
+    font-weight: bold;
+    display: inline;
+    background: none;
+}
+div#menu ul li {
+    font-size: 11px;
+    font-weight: bold;
+    display: inline;
+    background: none;
+}
+
+div#menufooter ul li a {
+    color: #5F85A5;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 15px 10px 15px;
+    border-right: 1px solid #264058;
+}
+
+div#menu ul li a {
+    color: #5F85A5;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    border-right: 1px solid #264058;
+}
+
+div#menutfooter ul li a:hover {
+    color: #FFFFFF;
+}
+
+div#menu ul li a:hover {
+    color: #FFFFFF;
+}
+
+div#menufooter ul li a:active {
+    color: #FFFFFF;
+}
+
+div#menu ul li a:active {
+    color: #FFFFFF;
+}
+
+div#left a {
+    border-left: 1px solid #264058;
+}
+
+.carrier {
+  background: #cce;
+}
+.dread {
+  background: #ecc;
+}
+.mothership {
+  background: #cec;
+}
+.titan {
+  background: #eec;
+}
+
+/*---------------------------------------------------------------------------
+
+Search Page
+
+---------------------------------------------------------------------------*/
+
+div#searchbody{
+    margin:0 20px;
+    text-align:left
+
+}
+
+/*---------------------------------------------------------------------------
+
+Form styles
+
+---------------------------------------------------------------------------*/
+
+
+
+
+
+form, select, input {
+	display: inline;
+	font-size: .9em;
+	margin: 0.1em;
+
+	}
+form p {
+    font-size: .8em;
+    margin: 2px 0;
+}
+form img{
+    border:0;
+}
+
+form #player a:hover ,form #corp a:hover,form #alliance a:hover{
+    background:none;
+}
+
+
+/* the following 3 tags fix a conflict created by the search form :mad: grummbo! */
+form #player{
+    text-align:left;
+    width:32%;
+    float:left;
+}
+
+form #player img{
+    border:0;
+    }
+
+form #player a:hover ,form #corp a:hover,form #alliance a:hover{
+    background:none;
+}
+
+
+
+form #alliance{
+    text-align:left;
+    width:32%;
+    float:left;
+}
+
+
+form #corp{
+    text-align:left;
+    width:32%;
+    float:left;
+}
+
+
+div#ship label{
+    width:30%;
+    float:left;
+    margin: 2px;
+    }
+
+
+textarea {
+	float: left;
+	margin: auto;
+	display: block;
+	width: 95%;
+	}
+
+
+
+input:focus, select:focus, textarea:focus {
+	background: #E4FEF5;
+	}
+
+
+fieldset {
+	padding: 0.5em;
+	margin: 0.5em 0em;
+	border: 1px solid #264058;
+	}
+
+
+legend {
+	font-weight: bold;
+	padding: 0.3em;
+	}
+
+label {
+    font-size:.8em;
+	line-height: 1.5em;
+	padding: 0.2em 0.2em 0em 0.2em;
+	margin:0.5em  0.2em 0 0;
+	}
+
+
+input {
+    border:1px solid #264058;
+    }
+
+select{
+
+}
+
+label.selectLabel, label.switchedLabel, label.uploadsLabel {
+width: 11em;
+float: left;
+}
+
+input[type=hidden],
+input.hidden{
+    border:none;
+}
+
+#errorExplanation {
+  background: #efefef none repeat scroll 0%;
+  border: solid 1px #dcdcdc;
+  padding: .5em;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+#errorExplanation h2 {
+  background: transparent url("/images/icons/white/32_32/icon09_13.png") no-repeat scroll 0pt;
+  border: 0;
+  color: #A40202;
+  font-size: 1.2em;
+  line-height: 16px;
+  margin: 0;
+  padding: .3em 32px;
+}
+
+#errorExplanation p {
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+#errorExplanation ul {
+  padding: 0 2em;
+  list-style-type: disc;
+}
+
+#errorExplanation li {}
+
+.pagination {
+  padding: 3px;
+  margin: 3px;
+}
+.pagination a {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #aaaadd;
+  text-decoration: none;
+  color: #000099;
+}
+.pagination a:hover, .pagination a:active {
+  border: 1px solid #000099;
+  color: #000;
+}
+.pagination span.current {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #000;
+  font-weight: bold;
+  background-color: #435D71;
+  color: #FFF;
+}
+.pagination span.disabled {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #eee;
+  color: #ddd;
+}
+

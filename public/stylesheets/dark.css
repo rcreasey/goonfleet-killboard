@@ -1,0 +1,278 @@
+
+body {
+  background: url("/images/interface/bg-body.png");
+  color: #fff;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+p {
+  font-size: 11px; }
+
+a {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none; }
+  a.icon {
+    background-repeat: no-repeat;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    min-width: 32px;
+    padding-left: 36px;
+    text-align: left; }
+  a.details {
+    background-image: url("/images/icons/white/16_16/icon09_06.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    margin-right: .5em;
+    min-width: 16px;
+    padding-right: 16px;
+    text-align: left; }
+  a:hover {
+    color: #ccc; }
+
+img.icon {
+  border: solid 1px #666; }
+
+h2 {
+  border-bottom: solid 1px #aaa;
+  margin: 0 0 .5em 0;
+  padding: 0; }
+
+h3 {
+  border-bottom: solid 1px #888;
+  margin: 1em 0 .25em 0;
+  padding: 0; }
+
+h4 {
+  border-bottom: solid 1px #666;
+  margin: 1em 0 .15em 0;
+  padding: 0; }
+
+
+#wrapper {
+  background: url("/images/interface/bg-wrapper.png");
+  border-top: 0;
+  border-left: solid 1px #000;
+  border-bottom: 0;
+  border-right: solid 1px #000;
+  min-height: 100%;
+  margin: 0px auto;
+  padding: 0 2em;
+  position: absolute;
+  left: 150px;
+  width: 825px; }
+
+#logo {
+  background: transparent url(/images/interface/bg-logo.png) no-repeat scroll -764px -25pt;
+  display: block;
+  font-size: 0;
+  min-height: 396px;
+  position: absolute;
+  width: 764px; }
+
+#header {
+  margin: 0;
+  padding: 1em 0; }
+  #header h1 {
+    background: url("/images/interface/header.png") no-repeat top left;
+    font-size: 0;
+    color: #666;
+    min-height: 40px;
+    margin: 0; }
+
+#navigation {
+  border-top: solid 2px #aaa;
+  margin-top: 1em;
+  padding: 0; }
+  #navigation ul {
+    margin: 0;
+    padding: 0; }
+    #navigation ul li {
+      display: inline;
+      margin-right: 1em;
+      list-style: none; }
+      #navigation ul li a {
+        font-weight: normal;
+        border-top: solid #aaa 2px; }
+        #navigation ul li a:hover {
+          border-top: solid #fff 2px;
+          text-decoration: none; }
+        #navigation ul li a.selected {
+          border-top: solid #fff 2px;
+          font-weight: bold; }
+
+#footer {
+  color: #ccc;
+  clear: both;
+  font-size: .9em;
+  margin: 2em 0 0 0;
+  padding: .5em;
+  bottom: 0;
+  text-align: center; }
+
+
+p.quicklink {
+  font-size: .9em;
+  margin: -.8em 0 1em 0; }
+
+#victimImage {
+  float: left;
+  width: 128px; }
+  #victimImage img {
+    border: solid 1px #444; }
+
+#killmail_details {
+  border: solid 1px #777;
+  margin-left: 145px; }
+  #killmail_details div {
+    background: url("/images/interface/bg-table-cell.png");
+    clear: right; }
+    #killmail_details div span {
+      background: url("/images/interface/bg-table-header-cell.png");
+      display: block;
+      float: left;
+      margin-right: .5em;
+      padding-left: .2em;
+      width: 125px; }
+
+#killmail {
+  background: url("/images/interface/bg-table-cell-alt.png");
+  border: solid 1px #aaa;
+  padding: .25em .5em; }
+
+
+form fieldset {
+  background: url("/images/interface/bg-table-cell.png");
+  border: 0;
+  margin: 0 0 1.5em 0;
+  padding: 0; }
+form legend {
+  font-size: 1.25em;
+  font-weight: bold; }
+form div {
+  background: url("/images/interface/bg-table-cell-alt.png");
+  clear: both;
+  line-height: 2em;
+  margin: 0;
+  padding: 0; }
+  form div label {
+    background: url("/images/interface/bg-table-cell.png");
+    display: block;
+    float: left;
+    line-height: 2em;
+    text-align: right;
+    width: 145px; }
+form input {
+  color: #000; }
+  form input[type=checkbox] {
+    margin: 0; }
+  form input[type=submit] {
+    border-bottom: #cfcfcf 1px solid;
+    border-right: #cfcfcf 1px solid;
+    padding: 2px; }
+form textarea {
+  background: url("/images/interface/bg-input.png");
+  border-bottom: solid 1px #ccc;
+  border-right: solid 1px #ccc;
+  overflow: auto;
+  width: 817px; }
+form #submit {
+  background: url("/images/interface/bg-table-header-cell.png");
+  border-bottom: solid 1px #999;
+  border-right: solid 1px #999;
+  padding: 5px 10px;
+  margin-top: 0; }
+
+
+table {
+  border: 0;
+  font-size: .9em;
+  margin: 0 0 2em 0;
+  text-align: center;
+  width: 100%; }
+  table thead th {
+    background: url("/images/interface/bg-table-header-cell.png");
+    border-bottom: solid 1px #aaa;
+    font-size: 1.2em;
+    padding: 5px 0; }
+  table tbody tr td {
+    margin: 0;
+    padding: 3px;
+    border-right: dashed 1px #777;
+    border-bottom: solid 1px #aaa; }
+    table tbody tr td:first-child {
+      border-left: dashed 1px #777;
+      font-size: 1.1em; }
+  table tbody tr.odd td {
+    background: url("/images/interface/bg-table-cell.png"); }
+  table tbody tr.even td {
+    background: url("/images/interface/bg-table-cell-alt.png"); }
+
+
+#notice {
+  background: #efefef none repeat scroll 0%;
+  border: solid 1px #dcdcdc;
+  color: #000;
+  padding: .5em;
+  margin-bottom: 1em;
+  text-align: left; }
+
+#errorExplanation {
+  background: #fff url("/images/icons/white/64_64/icon09_11.png") no-repeat scroll -20px -23px;
+  border: solid 1px #dcdcdc;
+  color: #000;
+  font-weight: bold;
+  padding: .5em 0 .5em 45px;
+  margin-bottom: 1em;
+  text-align: left; }
+  #errorExplanation h2 {
+    border: 0;
+    color: #A40202;
+    font-size: 1.2em;
+    line-height: 16px;
+    margin: 0; }
+  #errorExplanation p {
+    font-weight: bold;
+    margin-left: 1em; }
+  #errorExplanation ul {
+    padding: 0 2em;
+    list-style-type: disc; }
+
+
+.pagination {
+  padding: 3px;
+  margin: 1em; }
+  .pagination a {
+    background: url("/images/interface/bg-table-cell.png");
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #aaa;
+    text-decoration: none;
+    color: #fff; }
+    .pagination a:hover {
+      background: url("/images/interface/bg-table-cell-alt.png");
+      border: 1px solid #fff;
+      color: #fff; }
+  .pagination span.current {
+    background: url("/images/interface/bg-table-header-cell.png");
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #000;
+    font-weight: bold;
+    color: #FFF; }
+  .pagination span.disabled {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #666;
+    color: #999; }
+
+.pagination a:active {
+  border: 1px solid #000099;
+  color: #000; }

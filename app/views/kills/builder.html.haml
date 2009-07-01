@@ -1,0 +1,49 @@
+%h2
+  Search 
+  = "for: #{params[:lookup].capitalize}" unless params[:lookup].nil?
+
+- form_for(:query, :url => search_url, :html => {:method => :post}) do |f|
+  = hidden_field_tag :method, 'builder'
+  - unless params[:lookup].nil?
+    = hidden_field_tag :field, params[:lookup]
+    = lookup_input params[:lookup]
+
+    
+  - else
+    %fieldset
+      %legend Time
+      .min_time
+        %label{:for => 'min_time'} After:
+        = "#{select_eve_hour 0, :field_name => 'min_time'} #{select_eve_date Time.now, :field_name => 'min_date'}"
+      .max_time
+        %label{:for => 'max_time'} Before:
+        = "#{select_eve_hour 0, :field_name => 'max_time'} #{select_eve_date Time.now, :field_name => 'max_date'}"
+  
+    %fieldset
+      %legend Involved Parties
+      .corporations
+        %label{:for => 'corporations'} Corporation:
+        = text_field_with_auto_complete :pilot, :corporation_name
+      .alliances
+        %label{:for => 'alliances'} Alliance:
+        = text_field_with_auto_complete :alliance, :name, :autocomplete => 'off'
+      .pilots
+        %label{:for => 'pilots'} Pilot:
+        = text_field_with_auto_complete :pilot, :name
+
+    / %fieldset
+    /   %legend Ship Type
+    /   .ships
+    /     %label{:for => 'ships'} Ship Name:
+    /     = text_field_with_auto_complete :pilot, :ship_name
+      
+    %fieldset
+      %legend Location
+      .system
+        %label{:for => 'systems'} Occurring in System:
+        = text_field_with_auto_complete :solar_system, :solarSystemName
+      .region
+        %label{:for => 'regions'} Occurring in Region:
+        = text_field_with_auto_complete :region, :regionName
+
+  #submit= submit_tag 'Lookup'

@@ -1,0 +1,79 @@
+DRb server: ensure_index_exists for class Kill
+Asked for a remote server ? true, ENV["FERRET_USE_LOCAL_INDEX"] is "true", looks like we are the server
+Will use local index.
+using index in /Users/rcreasey/Desktop/rails_killboard/index/development/kill
+default field list: [:alliances, :ships, :victim_details, :solar_system, :victors_details, :region, :date, :players, :corporations]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mKill Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `kills`[0m
+DRb server: rebuild index for class(es) [Kill(id: integer, posted: datetime, checksum: string, killmail: text, manifest: text)] in /Users/rcreasey/Desktop/rails_killboard/index/development/kill/rebuild
+  [4;36;1mSQL (14.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `kills` [0m
+reindexing model Kill
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+using mysql specific batched find :all. Turn off with  :mysql_fast_batches => false if you encounter problems (i.e. because of non-integer UUIDs in the id column)
+  [4;36;1mKill Load (0.6ms)[0m   [0;1mSELECT * FROM `kills` WHERE (kills.id > 0) LIMIT 1000[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+changing index dir to /Users/rcreasey/Desktop/rails_killboard/index/development/kill/20090622224507
+index dir is now /Users/rcreasey/Desktop/rails_killboard/index/development/kill/20090622224507
+DRb server: ensure_index_exists for class Kill
+#method_missing(:find_id_by_contents, ["Kill", "victors_details:*Goonswarm*", {:page=>1, :per_page=>15, :sort=>date:<auto>!, :offset=>0, :limit=>15}])
+DRb server: ensure_index_exists for class Kill
+#method_missing(:find_id_by_contents, ["Kill", "victors_details:*Goonswarm*", {:page=>1, :per_page=>15, :sort=>date:<auto>!, :offset=>0, :limit=>15}])
+DRb server: ensure_index_exists for class Kill
+#method_missing(:find_id_by_contents, ["Kill", "victors_details:*Goonswarm*", {:page=>1, :per_page=>15, :sort=>date:<auto>!, :offset=>0, :limit=>15}])
+DRb server: ensure_index_exists for class Kill
+#method_missing(:find_id_by_contents, ["Kill", "victors_details:*Goonswarm*", {:page=>1, :per_page=>15, :sort=>date:<auto>!, :offset=>0, :limit=>15}])
+DRb server: ensure_index_exists for class Kill
+#method_missing(:find_id_by_contents, ["Kill", "", {:page=>nil, :per_page=>nil, :sort=>date:<auto>!}])
+DRb server: ensure_index_exists for class Kill
+#method_missing(:find_id_by_contents, ["Kill", "victors_details:*Goonswarm*", {:page=>1, :per_page=>15, :sort=>date:<auto>!, :offset=>0, :limit=>15}])
+DRb server: ensure_index_exists for class Kill
+#method_missing(:find_id_by_contents, ["Kill", "victors_details:*Goonswarm*", {:page=>1, :per_page=>15, :sort=>date:<auto>!, :offset=>0, :limit=>15}])
+DRb server: ensure_index_exists for class Kill
+DRb server: ensure_index_exists for class Kill
+DRb server: ensure_index_exists for class Kill
+DRb server: ensure_index_exists for class Kill
+#method_missing(:add, ["Kill", {:alliances=>"NONE,NONE,NONE", :ships=>"Amarr Shuttle,Leviathan,Incursus", :victim_details=>"Konno Yoshiho,GoonFleet,NONE", :solar_system=>"9CG6-H", :victors_details=>"SamHandwich,GoonFleet,NONE;myrtarous,GoonFleet,NONE", :date=>1242890100, :region=>"Querious", :players=>"Konno Yoshiho,SamHandwich,myrtarous", :corporations=>"GoonFleet,GoonFleet,GoonFleet", :id=>1}])
+DRb server: ensure_index_exists for class Kill
+DRb server: ensure_index_exists for class Kill
+DRb server: ensure_index_exists for class Kill
+DRb server: ensure_index_exists for class Kill
+#method_missing(:find_id_by_contents, ["Kill", "region:Querious", {:page=>nil, :per_page=>nil, :sort=>date:<auto>!}])
+DRb server: ensure_index_exists for class Kill
+DRb server: ensure_index_exists for class Kill
+#method_missing(:find_id_by_contents, ["Kill", "victors_details:*Goonswarm*", {:page=>1, :per_page=>15, :sort=>date:<auto>!, :offset=>0, :limit=>15}])
+DRb server: ensure_index_exists for class Kill
+DRb server: ensure_index_exists for class Kill
+#method_missing(:add, ["Kill", {:alliances=>"GoonSwarm,GoonSwarm,GoonSwarm", :ships=>"Amarr Shuttle,Leviathan,Incursus", :victim_details=>"Konno Yoshiho,GoonFleet,GoonSwarm", :solar_system=>"9CG6-H", :victors_details=>"SamHandwich,GoonFleet,GoonSwarm;myrtarous,GoonFleet,GoonSwarm", :date=>1242890100, :region=>"Querious", :players=>"Konno Yoshiho,SamHandwich,myrtarous", :corporations=>"GoonFleet,GoonFleet,GoonFleet", :id=>2}])
+DRb server: ensure_index_exists for class Kill
+DRb server: ensure_index_exists for class Kill
+#method_missing(:find_id_by_contents, ["Kill", "victors_details:*Goonswarm*", {:page=>1, :per_page=>15, :sort=>date:<auto>!, :offset=>0, :limit=>15}])
+#method_missing(:find_id_by_contents, ["Kill", "victim_details:*Goonswarm*", {:page=>1, :per_page=>15, :sort=>date:<auto>!, :offset=>0, :limit=>15}])
+DRb server: ensure_index_exists for class Kill
+#method_missing(:find_id_by_contents, ["Kill", "victors_details:*Goonswarm*", {:page=>1, :per_page=>15, :sort=>date:<auto>!, :offset=>0, :limit=>15}])
+#method_missing(:find_id_by_contents, ["Kill", "victim_details:*Goonswarm*", {:page=>1, :per_page=>15, :sort=>date:<auto>!, :offset=>0, :limit=>15}])
+DRb server: ensure_index_exists for class Kill
+#method_missing(:find_id_by_contents, ["Kill", "alliances:GoonSwarm", {:page=>nil, :per_page=>nil, :sort=>date:<auto>!}])
+DRb server: ensure_index_exists for class Kill
+Asked for a remote server ? true, ENV["FERRET_USE_LOCAL_INDEX"] is "true", looks like we are the server
+Will use local index.
+using index in /Users/ryan/projects/sites/killboard.goonfleet.com/index/development/kill/20090622224507
+default field list: [:players, :ships, :corporations, :solar_system, :region, :date, :victim_details, :victors_details, :alliances]
+#method_missing(:find_id_by_contents, ["Kill", "victors_details:*Goonswarm*", {:offset=>0, :per_page=>15, :limit=>15, :sort=>date:<auto>!, :page=>1}])
+#method_missing(:find_id_by_contents, ["Kill", "victim_details:*Goonswarm*", {:offset=>0, :per_page=>15, :limit=>15, :sort=>date:<auto>!, :page=>1}])
+DRb server: ensure_index_exists for class Kill
+#method_missing(:find_id_by_contents, ["Kill", "victors_details:*Goonswarm*", {:offset=>0, :per_page=>15, :limit=>15, :sort=>date:<auto>!, :page=>1}])
+#method_missing(:find_id_by_contents, ["Kill", "victim_details:*Goonswarm*", {:offset=>0, :per_page=>15, :limit=>15, :sort=>date:<auto>!, :page=>1}])
+DRb server: ensure_index_exists for class Kill
+DRb server: ensure_index_exists for class Kill
+#method_missing(:find_id_by_contents, ["Kill", "region:Delve", {:per_page=>nil, :sort=>date:<auto>!, :page=>nil}])
+DRb server: ensure_index_exists for class Kill
+DRb server: ensure_index_exists for class Kill
+DRb server: ensure_index_exists for class Kill
+#method_missing(:find_id_by_contents, ["Kill", "victors_details:*Goonswarm*", {:offset=>0, :per_page=>15, :limit=>15, :sort=>date:<auto>!, :page=>1}])
+#method_missing(:find_id_by_contents, ["Kill", "victim_details:*Goonswarm*", {:offset=>0, :per_page=>15, :limit=>15, :sort=>date:<auto>!, :page=>1}])
+DRb server: ensure_index_exists for class Kill
+DRb server: ensure_index_exists for class Kill
+#method_missing(:add, ["Kill", {:players=>"Leiko,Frocke,Ronin Achuru,Winchestori", :ships=>"", :corporations=>"Rogue Creations,GoonFleet,GoonFleet,Merch Industrial", :solar_system=>"SG-3HY", :region=>"The Kalevala Expanse", :date=>1246419180, :victim_details=>"Leiko,Rogue Creations,Veritas Immortalis", :id=>1, :victors_details=>"Frocke,GoonFleet,GoonSwarm;Ronin Achuru,GoonFleet,GoonSwarm;Winchestori,Merch Industrial,GoonSwarm", :alliances=>"Veritas Immortalis,GoonSwarm,GoonSwarm,GoonSwarm"}])
+DRb server: ensure_index_exists for class Kill

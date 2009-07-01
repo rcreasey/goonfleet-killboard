@@ -1,0 +1,22 @@
+%h2 Kill Details
+#victimImage= ship_icon( @kill.victim, '128')
+#killmail_details
+  .posted= "#{content_tag(:span, 'Date:')} #{posted_time(@kill)}"
+  .victim= "#{content_tag(:span, 'Victim:')} #{pilot_search_link(@kill.victim)}"
+  .corporation= "#{content_tag(:span, 'Corp:')} #{corporation_search_link(@kill.victim)}"
+  .alliance= "#{content_tag(:span, 'Alliance:')} #{alliance_search_link(@kill.victim)}"
+  .ship= "#{content_tag(:span, 'Ship:')} #{ship_search_link(@kill.victim)}"
+  .system= "#{content_tag(:span, 'System:')} #{system_search_link(@kill.victim)}"
+  .region= "#{content_tag(:span, 'Region:')} #{region_search_link(@kill.victim)}"
+  .security= "#{content_tag(:span, 'System Sec:')} #{system_security_status(@kill.victim)}"
+  .damage= "#{content_tag(:span, 'Damage Taken:')} #{@kill.victim.damage}"
+%h3= "#{link_to 'Raw Killmail', '#', :onclick => visual_effect(:toggle_blind, "killmail", :duration => 0.2)}"
+#killmail{:style => 'display:none'}= content_tag(:pre, @kill.killmail)
+
+#participants 
+  %h3 Participants
+  = kill_participants_table('Participants', %w(Player Corp Alliance Ship Weapon Damage), @kill.victors)
+  
+#manifest
+  %h3 Kill Item Manifest
+  = kill_manifest_table( @kill.manifest_list )

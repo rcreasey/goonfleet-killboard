@@ -1,0 +1,23 @@
+login: &login
+  encoding: utf8
+  adapter: mysql
+  username: killboard
+  password: killboard
+  
+development:
+  database: killboard_dev
+  host: localhost
+  <<: *login
+
+test: &TEST
+  database: killboard_test
+  host: localhost
+  <<: *login
+  
+production:
+  database: killboard
+  host: db01.infernalhosting.net
+  <<: *login
+
+cucumber:
+  <<: *TEST

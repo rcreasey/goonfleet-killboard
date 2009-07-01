@@ -1,0 +1,3 @@
+%h2 Raw Data for Killmail:
+= link_to '&lt;&lt; Back to details', kill_url(@kill)
+= text_area_tag 'killmail', @kill.killmail, {:readonly => true, :ondblclick => 'this.select();', :rows => 50, :cols => 100}

@@ -1,0 +1,5 @@
+%h2 Add Killmail
+- form_for(:kill, :url => kills_path, :html => {:method => :post}) do |f|
+  %fieldset
+    = render :partial => 'form', :object => f
+    #submit= submit_tag 'Submit'

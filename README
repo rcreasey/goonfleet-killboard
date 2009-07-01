@@ -1,0 +1,35 @@
+goonfleet-killboard
+====
+
+The goonfleet-killboard is a ruby on rails port of the existing goonfleet killboard found at: <http://killboard.goonfleet.com/>.
+
+This port is geared to simplifying and streamlining the entire process of collecting killmails from the Eve-Online in game browser, correlating them into a list and providing a searching mechanism that will allow for different kinds of custom queries.
+
+Getting
+-------
+
+The authoritative source for this project is available at
+<http://github.com/rcreasey/goonfleet-killboard>. You can clone your own copy with the
+following command:
+
+    git clone git://github.com/rcreasey/goonfleet-killboard.git
+
+If you want to make changes to the codebase, you need to fork your own github
+repository for said changes. Send a pullrequest to [rcreasey][1]
+when you've got something ready for the master that you think should be
+integrated into the root source.
+
+Bugs or feature requests can be submitted by forking a repository as
+previously described, and then using [Lighthouse][2] to add an issue.
+
+  [1]: <http://github.com/rcreasey> (rcreasey on GitHub)
+  [2]: <http://goonfleetdev.lighthouseapp.com/> (Lighthouse issue tracking)
+
+Requirements
+------------
+
+The following is a list of required gems for this ruby project:
+
+* rpsec
+* hpricot
+* rake

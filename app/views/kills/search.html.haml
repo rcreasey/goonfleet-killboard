@@ -1,0 +1,2 @@
+%h2= "Results for#{session[:query].inspect}"
+= kill_list_table('Recent Kills', %w(Time System Victim Alliance Corp Ship &nbsp; ), @kills)
