@@ -1,4 +1,5 @@
 Given /^I have no Alliances$/ do
+  pending
   Alliance.delete_all
 end
 

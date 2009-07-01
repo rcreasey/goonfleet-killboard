@@ -60,7 +60,6 @@ class KillsController < ApplicationController
       params[:limit] = 15
       @gf_kills = load_kills_by_query('victors_details:*Goonswarm*')
       @gf_losses = load_kills_by_query('victim_details:*Goonswarm*')
-      @kills = @gf_kills + @gf_losses
       
       respond_to do |format|
         format.html { render :action => 'overview' }

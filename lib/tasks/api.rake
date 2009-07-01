@@ -6,7 +6,7 @@ namespace :api do
     
     desc "Updates the list of alliances."
     task :refresh do
-      Reve::API.new.alliances.each do |alliance|
+      Reve::API.new.alliances.first do |alliance|
         attributes = {:name => alliance.name, 
                       :short_name => alliance.short_name,
                       :eve_id => alliance.id,
