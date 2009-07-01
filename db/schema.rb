@@ -22,6 +22,45 @@ ActiveRecord::Schema.define(:version => 20080727000610) do
     t.datetime "updated_at"
   end
 
+  create_table "invGroups", :primary_key => "groupID", :force => true do |t|
+    t.integer "categoryID",           :limit => 1
+    t.string  "groupName",            :limit => 100
+    t.string  "description",          :limit => 3000
+    t.integer "graphicID",            :limit => 2
+    t.boolean "useBasePrice"
+    t.boolean "allowManufacture"
+    t.boolean "allowRecycler"
+    t.boolean "anchored"
+    t.boolean "anchorable"
+    t.boolean "fittableNonSingleton"
+    t.boolean "published"
+  end
+
+  add_index "invGroups", ["categoryID"], :name => "invGroups_IX_category"
+  add_index "invGroups", ["graphicID"], :name => "graphicID"
+
+  create_table "invTypes", :primary_key => "typeID", :force => true do |t|
+    t.integer "groupID",             :limit => 2
+    t.string  "typeName",            :limit => 100
+    t.string  "description",         :limit => 3000
+    t.integer "graphicID",           :limit => 2
+    t.float   "radius"
+    t.float   "mass"
+    t.float   "volume"
+    t.float   "capacity"
+    t.integer "portionSize"
+    t.integer "raceID",              :limit => 1
+    t.float   "basePrice"
+    t.boolean "published"
+    t.integer "marketGroupID",       :limit => 2
+    t.float   "chanceOfDuplicating"
+  end
+
+  add_index "invTypes", ["graphicID"], :name => "graphicID"
+  add_index "invTypes", ["groupID"], :name => "invTypes_IX_Group"
+  add_index "invTypes", ["marketGroupID"], :name => "marketGroupID"
+  add_index "invTypes", ["raceID"], :name => "raceID"
+
   create_table "kills", :force => true do |t|
     t.datetime "posted"
     t.string   "checksum",                                                       :null => false
@@ -33,6 +72,92 @@ ActiveRecord::Schema.define(:version => 20080727000610) do
   end
 
   add_index "kills", ["checksum"], :name => "index_kills_on_checksum", :unique => true
+
+  create_table "mapConstellations", :primary_key => "constellationID", :force => true do |t|
+    t.integer "regionID"
+    t.string  "constellationName", :limit => 100
+    t.float   "x"
+    t.float   "y"
+    t.float   "z"
+    t.float   "xMin"
+    t.float   "xMax"
+    t.float   "yMin"
+    t.float   "yMax"
+    t.float   "zMin"
+    t.float   "zMax"
+    t.integer "factionID"
+    t.float   "radius"
+  end
+
+  add_index "mapConstellations", ["constellationID", "regionID"], :name => "constellationID", :unique => true
+  add_index "mapConstellations", ["factionID"], :name => "factionID"
+  add_index "mapConstellations", ["regionID"], :name => "mapConstellations_IX_region"
+
+  create_table "mapRegions", :primary_key => "regionID", :force => true do |t|
+    t.string  "regionName", :limit => 100
+    t.float   "x"
+    t.float   "y"
+    t.float   "z"
+    t.float   "xMin"
+    t.float   "xMax"
+    t.float   "yMin"
+    t.float   "yMax"
+    t.float   "zMin"
+    t.float   "zMax"
+    t.integer "factionID"
+    t.float   "radius"
+  end
+
+  add_index "mapRegions", ["factionID"], :name => "factionID"
+
+  create_table "mapSolarSystems", :primary_key => "solarSystemID", :force => true do |t|
+    t.integer "regionID"
+    t.integer "constellationID"
+    t.string  "solarSystemName", :limit => 100
+    t.float   "x"
+    t.float   "y"
+    t.float   "z"
+    t.float   "xMin"
+    t.float   "xMax"
+    t.float   "yMin"
+    t.float   "yMax"
+    t.float   "zMin"
+    t.float   "zMax"
+    t.float   "luminosity"
+    t.boolean "border"
+    t.boolean "fringe"
+    t.boolean "corridor"
+    t.boolean "hub"
+    t.boolean "international"
+    t.boolean "regional"
+    t.boolean "constellation"
+    t.float   "security"
+    t.integer "factionID"
+    t.float   "radius"
+    t.integer "sunTypeID",       :limit => 2
+    t.string  "securityClass",   :limit => 2
+  end
+
+  add_index "mapSolarSystems", ["constellationID"], :name => "mapSolarSystems_IX_constellation"
+  add_index "mapSolarSystems", ["factionID"], :name => "factionID"
+  add_index "mapSolarSystems", ["regionID"], :name => "mapSolarSystems_IX_region"
+  add_index "mapSolarSystems", ["security"], :name => "mapSolarSystems_IX_security"
+  add_index "mapSolarSystems", ["solarSystemID", "constellationID", "regionID"], :name => "solarSystemID", :unique => true
+  add_index "mapSolarSystems", ["sunTypeID"], :name => "sunTypeID"
+
+  create_table "mapUniverse", :primary_key => "universeID", :force => true do |t|
+    t.string "universeName", :limit => 100
+    t.float  "x"
+    t.float  "y"
+    t.float  "z"
+    t.float  "xMin"
+    t.float  "xMax"
+    t.float  "yMin"
+    t.float  "yMax"
+    t.float  "zMin"
+    t.float  "zMax"
+    t.float  "radius"
+  end
 
   create_table "pilots", :force => true do |t|
     t.integer  "kill_id",                             :null => false

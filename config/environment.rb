@@ -22,3 +22,6 @@ Rails::Initializer.run do |config|
 
   # config.active_record.observers = :cacher, :garbage_collector
 end
+
+# remove the colored SQL log lines
+ActiveRecord::Base.colorize_logging = false

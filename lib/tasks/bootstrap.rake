@@ -8,7 +8,11 @@ namespace :db do
       puts "Processing #{file}..."
       sql_file = File.open( file ).read
       sql_file.split(';').each do |statement|
-        ActiveRecord::Base.connection.execute( statement )
+        begin
+          ActiveRecord::Base.connection.execute( statement )
+        rescue
+          # just keep silent for now
+        end
       end
     end
   end
