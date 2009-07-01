@@ -89,3 +89,11 @@ LocalIndex: ensure_index_exists at /Users/ryan/projects/sites/killboard.goonflee
 query: victim_details:*goonswarm*
 stored_fields: 
 LocalIndex: ensure_index_exists at /Users/ryan/projects/sites/killboard.goonfleet.com/index/development/kill/20090622224507
+LocalIndex: ensure_index_exists at /Users/ryan/projects/sites/killboard.goonfleet.com/index/development/kill/20090622224507
+LocalIndex: ensure_index_exists at /Users/ryan/projects/sites/killboard.goonfleet.com/index/development/kill/20090622224507
+query: victors_details:*goonswarm*
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/projects/sites/killboard.goonfleet.com/index/development/kill/20090622224507
+LocalIndex: ensure_index_exists at /Users/ryan/projects/sites/killboard.goonfleet.com/index/development/kill/20090622224507
+query: victim_details:*goonswarm*
+stored_fields: 

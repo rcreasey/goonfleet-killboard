@@ -77,3 +77,6 @@ DRb server: ensure_index_exists for class Kill
 DRb server: ensure_index_exists for class Kill
 #method_missing(:add, ["Kill", {:players=>"Leiko,Frocke,Ronin Achuru,Winchestori", :ships=>"", :corporations=>"Rogue Creations,GoonFleet,GoonFleet,Merch Industrial", :solar_system=>"SG-3HY", :region=>"The Kalevala Expanse", :date=>1246419180, :victim_details=>"Leiko,Rogue Creations,Veritas Immortalis", :id=>1, :victors_details=>"Frocke,GoonFleet,GoonSwarm;Ronin Achuru,GoonFleet,GoonSwarm;Winchestori,Merch Industrial,GoonSwarm", :alliances=>"Veritas Immortalis,GoonSwarm,GoonSwarm,GoonSwarm"}])
 DRb server: ensure_index_exists for class Kill
+DRb server: ensure_index_exists for class Kill
+#method_missing(:find_id_by_contents, ["Kill", "victors_details:*Goonswarm*", {:offset=>0, :per_page=>15, :limit=>15, :sort=>date:<auto>!, :page=>1}])
+#method_missing(:find_id_by_contents, ["Kill", "victim_details:*Goonswarm*", {:offset=>0, :per_page=>15, :limit=>15, :sort=>date:<auto>!, :page=>1}])
