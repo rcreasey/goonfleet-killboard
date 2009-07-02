@@ -1,6 +1,5 @@
 Factory.define :kill do |f|
-  f.killmail = <<KILLMAIL
-#{DateTime.now.strftime("%Y-%m-%d %H:%M:%S")}
+  f.killmail "#{DateTime.now.strftime("%Y-%m-%d %H:%M:%S")}
 
 Victim: cell187
 Alliance: NONE
@@ -27,5 +26,13 @@ Heat Dissipation Field I
 Serpent F.O.F. Light Missile I, Qty: 10166 (Cargo)
 
 Exterminator F.O.F. Light Missile I, Qty: 36
-KILLMAIL
+"
+end
+
+Factory.define :alliance do |f|
+  f.sequence(:name) {|n| "Alliance #{n}"}
+  f.sequence(:short_name) {|n| "ALLI#{n}"}
+  f.eve_id "#{rand(9)}"
+  f.executor_corp_id "#{rand(9)}"
+  f.start_date "#{Time.now}"
 end

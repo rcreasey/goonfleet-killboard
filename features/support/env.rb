@@ -1,5 +1,5 @@
 # Sets up the Rails environment for Cucumber
-ENV["RAILS_ENV"] ||= "cucumber"
+ENV["RAILS_ENV"] ||= "test"
 require File.expand_path(File.dirname(__FILE__) + '/../../config/environment')
 require 'cucumber/rails/world'
 
@@ -22,3 +22,13 @@ end
 
 require 'cucumber/rails/rspec'
 require 'webrat/core/matchers'
+
+# require factories
+require "#{Rails.root}/spec/factories"  
+
+# require rake
+require 'rake'
+require 'rake/rdoctask'
+require 'rake/testtask'
+require 'tasks/rails'
+Dir["../../lib/tasks/*.rake"].each { |r| Rake.application.rake_require r }

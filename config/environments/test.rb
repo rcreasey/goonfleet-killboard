@@ -1,4 +1,5 @@
 # Settings specified here will take precedence over those in config/environment.rb
+ENV["FERRET_USE_LOCAL_INDEX"] = "true"
 
 # The test environment is used exclusively to run your application's
 # test suite.  You never need to work with it otherwise.  Remember that
@@ -24,6 +25,6 @@ config.action_mailer.delivery_method = :test
 config.gem "rspec", :lib => false, :version => ">=1.2.2"
 config.gem "rspec-rails", :lib => false, :version => ">=1.2.2"
 config.gem "webrat", :lib => false, :version => ">=0.4.3"
-config.gem "cucumber", :lib => false, :version => ">=0.2.2"
+config.gem "cucumber", :lib => false, :version => ">=0.3.11"
 config.gem "thoughtbot-factory_girl", :lib => "factory_girl", :source => "http://gems.github.com"
 

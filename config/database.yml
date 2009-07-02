@@ -9,7 +9,7 @@ development:
   host: localhost
   <<: *login
 
-test: &TEST
+test:
   database: killboard_test
   host: localhost
   <<: *login
@@ -18,8 +18,3 @@ production:
   database: killboard
   host: db01.infernalhosting.net
   <<: *login
-
-cucumber:
-  <<: *TEST
-cucumber:
-  <<: *TEST
