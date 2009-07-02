@@ -15,4 +15,4 @@ Feature: API Data Syncronization
     | GoonSwarm | OHGOD      | 824518128 |
     When I run the rake task "api:alliances:logos"
     And I should see the Alliance "GoonSwarm"
-    Then the Alliance "GoonSwarm" has attribute "logo" set to "23_02"
+    Then the Alliance "GoonSwarm" has attribute "icon" set to "23_02"
